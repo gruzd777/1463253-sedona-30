@@ -5,8 +5,150 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="header">
+      <a>
+        <img src="logo/logo-main.png" width="138" height="70" alt="Логотип Седона">
+      </a>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__link"><a href="blank.html"></a>Информация</li>
+          <li class="header__link"><a href="blank.html"></a>Фото и видео</li>
+          <li class="header__link"><a href="blank.html"></a>Карта штата</li>
+          <li class="header__link header__link--active"><a href="hotels.html"></a>Гостиницы</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__welcome">
+        <img src="img/welcome.png" width="456,65" height="350,88" alt="Welcome">
+      </section>
+      <section class="main__title">
+        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </section>
+      <section class="main__description">
+        <h2>Настоящий <br> городок</h2>
+        <p>— №1 —</p>
+        <p>Седона - не аттракцион для туристов, тамтечёт своя жизнь</p>
+      </section>
+      <section class="main__onlyimage">
+        <img src="img/cozyhouse.png" width="800" height="256" alt="Картинка красивого дома">
+      </section>
+      <section class="main__recomendations">
+        <ul class="main__list">
+          <li class="main__item">
+            <img src="icons/icon-1.png" widht="75" height="72" alt="Иконка домика">
+            <h3>Жильё</h3>
+            <p>Седона - не аттракцион для туристов, там
+              течёт своя жизнь</p>
+          </li>
+          <li class="main__item">
+            <img src="icons/icon-3.png" widht="64" height="77" alt="Иконка домика">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="main__item">
+            <img src="icons/icon-2.png" widht="75" height="70" alt="Иконка домика">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного
+              производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="main__description__two">
+        <h2>Там есть <br> мост дьявола</h2>
+        <p>— №2 —</p>
+        <p>Да, по нему можно пройти! Если конечно
+          вы осмелитесь</p>
+      </section>
+      <section class="main__onlyimage__two">
+        <img src="img/image__two.png" width="800" height="256" alt="Картинка красивого пейзажа">
+      </section>
+      <section class="main__description__three">
+        <ul class="main__list__two">
+          <li>
+            <h3>небольшая площадь</h3>
+            <p>— №3 —</p>
+            <p>все достопримечательности
+              находятся очень близко</p>
+          </li>
+          <li>
+            <h3>красивая дорога</h3>
+            <p>— №4 —</p>
+            <p>ехать в седону из лас-вегаса совсем
+              не скучно!</p>
+          </li>
+          <li>
+            <h3>мало туристов</h3>
+            <p>— №5 —</p>
+            <p>большинство едет в гранд каньон
+              и толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <section class="main__question">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      </section>
+      <section class="main__map">
+        <img src="img/map.png" width="1199" height="594" alt="Карта проезда">
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__contacts">
+        <P class="footer__tag">#VISITSEDONA</P>
+        <p class="footer__phone">
+          <a href="tel:+74956660166">+7(495) 666-01-66</a>
+        </p>
+      </section>
+      <section class="footer__social">
+        
+        <!-- В тренажёрах картинки добавлял бэкграундом. Тут решил сделать так. Сделаем li бэкграунд, а поверх наложим картинку -->
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+        <ul class="footer__list">
+          <li class="footer__link footer__link--tw">
+            <a href="#">
+              <img src="icons/twitter.png" width="17" height="17" alt="Иконка твиттер"></a>
+          </li>
+          <li class="footer__link footer__link--fb">
+            <a href="#">
+              <img src="icons/fb-icon.png" width="12" height="22" alt="Иконка фейсбука"></a>
+            </li>
+          <li class="footer__link footer__link--yt">
+            <a href="#">
+              <img src="icons/youtube.png" width="20" height="16" alt="Иконка ютуба"></a>
+            </li>
+        </ul>
+      </section>
+      <P class="footer__image">
+        <img src="icons/logo-htmlacademy.png" widht="115" height="41" alt="Лого академии">Website by
+      </P>
+    </footer>
+    <section class="feedback">
+      <h2 class="feedback__tittle">Поиск гостиницы в Седоне</h2>
+      <fieldset>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+         <label for="date-first">Дата заезда:</label>
+         <input type="date" id="date-first" name="Дата заезда">
+        </p>
+        <p>
+         <label for="date-two">Дата выезда:</label>
+         <input type="date" id="date-two" name="Дата выезда">
+        </p>
+      <p>Взрослые:
+        <button type="button">-</button>
+        <input type="text" name="Взрослые">
+        <button type="button">+</button>
+      </p>
+      <p>Дети:
+        <button type="button">-</button>
+        <input type="text" name="Дети">
+        <button type="button">+</button>
+      </p>
+      <button type="submit">Найти</button>
+      </form>
+    </fieldset>
+    </section>
   </body>
 </html>
