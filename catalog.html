@@ -1,11 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Страница с выбором отелей</title>
+    <title>Каталог - HTML Academy: Седона</title>
 </head>
 <body>
-    
-</body>
-</html>
+    <header class="header">
+        <a href="index.html">
+          <img src="icons/logo-main.png" width="138" height="70" alt="Логотип Седона">
+        </a>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__link"><a href="#"></a>Информация</li>
+            <li class="header__link"><a href="#"></a>Фото и видео</li>
+            <li class="header__link"><a href="#"></a>Карта штата</li>
+            <li class="header__link header__link--active">Гостиницы</li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <h1>Каталог отелей</h1>
+        <form action="https://echo.htmlacademy.ru" method="post"> 
+      <section class="main__filter main__filter--apart">
+        <h2>Фильтр по жилью</h2>
+        <fieldset>
+          <legend>Инфраструктура</legend>
+          <ul class="main__list main__list--infracstructura">
+           <li class="main__check">
+             <input type="checkbox" name="Бассейн" id="waterpool" checked>
+             <label for="waterpool">Бассейн</label>
+           </li>
+           <li class="main__check">
+            <input type="checkbox" name="Парковка" id="parking">
+            <label for="parking">Парковка</label>
+           </li>
+           <li class="main__check">
+            <input type="checkbox" name="Wi-fi" id="wifi">
+            <label for="wifi">Wi-fi</label>
+           </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья</legend>
+          <ul class="main__list main__list--type">
+            <li class="main__check">
+              <input type="checkbox" name="Гостиница" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li class="main__check">
+              <input type="checkbox" name="Мотель" id="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li class="main__check">
+              <input type="checkbox" name="Апартаменты" id="apart" checked>
+              <label for="apart">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+      </section>
+
+      <section class="main__filter main__filter--price">
+        <h2>Фильтр по цене</h2>
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <p>от 0 | до 3000</p>
+          <label for="range"></label>
+          <input type="range" min="0" max="3000" id="range" name="price" step="500" value="2500">
+        </fieldset>
+          <button type="submit">Показать</button>
+      </section>
+        </form>
+      <section class="search">
+        <h2>Найдено: 3</h2>
+        <ul class="main__search">Сортировка:
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По рейтингу</a></li>
+        </ul>
+        <img src="icons/icon-up-dir.png" alt="Вверх">
+        <img src="icons/icon-down-dir.png" alt="Вниз">
+      </section>
+      <section class="main__hotels">
+        <h2>Список найденных отелей</h2>
+        <ul class="main__hotels-list">
+          <li>
+            <a href="#">
+              <h3>Amara Resort & Spa</h3>
+              <img src="img/amara.png" alt="Гостиница Амара Резорт">
+            </a>
+               <p>Гостиница от 4000 Р.</p>
+               <p>
+              <a href="#">Подробнее</a>
+              <button type="button">Забронировать</button>
+              </p>
+              <p><img src="icons/star.png" alt="Звездочка"><img src="icons/star.png" alt="Звездочка">
+                <img src="icons/star.png" alt="Звездочка"><img src="icons/star.png" alt="Звездочка">
+                <img src="icons/star.png" alt="Звездочка">
+              </p>
+              <p>Рейтинг: 8.5</p>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Desert Quail Inn</h3>
+              <img src="img/desert.png" alt="Отель Дезерт">
+            </a>
+               <p>Мотель от 3000 Р.</p>
+               <p>
+              <a href="#">Подробнее</a>
+              <button type="button">Забронировать</button>
+              </p>
+              <p><img src="icons/star.png" alt="Звездочка"><img src="icons/star.png" alt="Звездочка">
+                <img src="icons/star.png" alt="Звездочка">
+              </p>
+              <p>Рейтинг: 8.9</p>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Villas at Poco Diablo</h3>
+              <img src="img/villas.png" alt="Апартаменты Вилла">
+            </a>
+               <p>Апартаменты от 2000 Р.</p>
+               <p>
+              <a href="#">Подробнее</a>
+              <button type="button">Забронировать</button>
+              </p>
+              <p><img src="icons/star.png" alt="Звездочка"><img src="icons/star.png" alt="Звездочка">
+              </p>
+              <p>Рейтинг: 9.2</p>
+          </li>
+        </ul>
+      </section>
+      </main>
+
+      <footer class="footer">
+        <section class="footer__contacts">
+          <h2>Контакты</h2>
+          <P class="footer__tag">#VISITSEDONA</P>
+          <p class="footer__phone">
+            <a href="tel:+74956660166">+7(495) 666-01-66</a>
+          </p>
+        </section>
+        <section class="footer__social">
+          <h2>Мы в социальных сетях</h2>
+          <ul class="footer__list">
+            <li class="footer__link footer__link--tw">
+              <a href="#">
+                <img src="icons/twitter.png" width="17" height="17" alt="Иконка твиттер"></a>
+            </li>
+            <li class="footer__link footer__link--fb">
+              <a href="#">
+                <img src="icons/fb-icon.png" width="12" height="22" alt="Иконка фейсбука"></a>
+              </li>
+            <li class="footer__link footer__link--yt">
+              <a href="#">
+                <img src="icons/youtube.png" width="20" height="16" alt="Иконка ютуба"></a>
+              </li>
+          </ul>
+        </section>
+        <p class="footer__image">
+          Website by<img src="icons/logo-htmlacademy.png" width="115" height="41" alt="Лого академии">
+        </p>
+      </footer>
+  </body>
+  </html>
