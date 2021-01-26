@@ -1,152 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <header class="header">
-      <a>
-        <img src="icons/logo-main.png" width="138" height="70" alt="Логотип Седона">
-      </a>
-      <nav class="header__menu">
-        <ul class="header__list">
-          <li class="header__link"><a href="#"></a>Информация</li>
-          <li class="header__link"><a href="#"></a>Фото и видео</li>
-          <li class="header__link"><a href="#"></a>Карта штата</li>
-          <li class="header__link"><a href="catalog.html"></a>Гостиницы</li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="main__welcome">
-        <img src="img/welcome.png" width="457" height="351" alt="Добро пожаловать">
-      </section>
-      <section class="main__title">
-        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </section>
-      <section class="main__description">
-        <h2>Настоящий <br> городок</h2>
-        <p>— №1 —</p>
-        <p>Седона - не аттракцион для туристов, тамтечёт своя жизнь</p>
-      </section>
-      <section class="main__onlyimage">
-        <img src="img/cozyhouse.png" width="800" height="256" alt="Картинка красивого дома">
-      </section>
-      <section class="main__recomendations">
-        <ul class="main__list">
-          <li class="main__item">
-            <img src="icons/icon-1.png" width="75" height="72" alt="Иконка домика">
-            <h3>Жильё</h3>
-            <p>Седона - не аттракцион для туристов, там
-              течёт своя жизнь</p>
-          </li>
-          <li class="main__item">
-            <img src="icons/icon-3.png" width="64" height="77" alt="Иконка домика">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="main__item">
-            <img src="icons/icon-2.png" width="75" height="70" alt="Иконка домика">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного
-              производства!</p>
-          </li>
-        </ul>
-      </section>
-      <section class="main__description2">
-        <h2>Там есть <br> мост дьявола</h2>
-        <p>— №2 —</p>
-        <p>Да, по нему можно пройти! Если конечно
-          вы осмелитесь</p>
-      </section>
-      <section class="main__onlyimage2">
-        <img src="img/image__two.png" width="800" height="256" alt="Картинка красивого пейзажа">
-      </section>
-      <section class="main__description3">
-        <ul class="main__list2">
-          <li>
-            <h2>небольшая площадь</h2>
-            <p>— №3 —</p>
-            <p>все достопримечательности
-              находятся очень близко</p>
-          </li>
-          <li>
-            <h2>красивая дорога</h2>
-            <p>— №4 —</p>
-            <p>ехать в седону из лас-вегаса совсем
-              не скучно!</p>
-          </li>
-          <li>
-            <h2>мало туристов</h2>
-            <p>— №5 —</p>
-            <p>большинство едет в гранд каньон
-              и толпится там</p>
-          </li>
-        </ul>
-      </section>
-      <section class="main__question">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      </section>
-      <section class="main__map">
-        <img src="img/map.png" width="1199" height="594" alt="Карта проезда">
-      </section>
-    </main>
-    <footer class="footer">
-      <section class="footer__contacts">
-        <h2>Контакты</h2>
-        <P class="footer__tag">#VISITSEDONA</P>
-        <p class="footer__phone">
-          <a href="tel:+74956660166">+7(495) 666-01-66</a>
-        </p>
-      </section>
-      <section class="footer__social">
-        <h2>Мы в социальных сетях</h2>
-        <!-- В тренажёрах логотипы соцсетей всегда добавлял бэкграундом. Тут решил сделать картинками. Сделаем li бэкграунд голубого цвета как в макете, а поверх наложим картинку -->
-        <ul class="footer__list">
-          <li class="footer__link footer__link--tw">
-            <a href="#">
-              <img src="icons/twitter.png" width="17" height="17" alt="Иконка твиттер"></a>
-          </li>
-          <li class="footer__link footer__link--fb">
-            <a href="#">
-              <img src="icons/fb-icon.png" width="12" height="22" alt="Иконка фейсбука"></a>
-            </li>
-          <li class="footer__link footer__link--yt">
-            <a href="#">
-              <img src="icons/youtube.png" width="20" height="16" alt="Иконка ютуба"></a>
-            </li>
-        </ul>
-      </section>
-      <P class="footer__image">
-        Website by<img src="icons/logo-htmlacademy.png" width="115" height="41" alt="Лого академии">
-      </P>
-    </footer>
-    <section class="feedback">
-      <h2 class="feedback__tittle">Поиск гостиницы в Седоне</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-         <label for="date-first">Дата заезда:</label>
-         <input type="date" id="date-first" name="Дата заезда">
-        </p>
-        <p>
-         <label for="date-two">Дата выезда:</label>
-         <input type="date" id="date-two" name="Дата выезда">
-        </p>
-      <p>Взрослые:
-        <button type="button">-</button>
-        <input type="text" name="Взрослые">
-        <button type="button">+</button>
-      </p>
-      <p>Дети:
-        <button type="button">-</button>
-        <input type="text" name="Дети">
-        <button type="button">+</button>
-      </p>
-      <button type="submit">Найти</button>
-      </form>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo" aria-label="Логотип Седона">
+      <img src="icons/logo-main.png" width="138" height="70" alt="Логотип Седона">
+    </a>
+    <nav class="header__menu">
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="#">Информация</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Фото и видео</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Карта штата</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="welcome">
+      <h1 class="welcome__title">Официальный сайт города "Седона"</h1>
+      <img src="img/welcome.png" width="457" height="351" alt="Добро пожаловать">
     </section>
-  </body>
+    <section class="why">
+      <h2 class="why__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="why__row">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <ul class="why__list">
+          <li class="why__item">
+            <div class="why__group">
+              <h2 class="why__title">Настоящий городок</h2>
+              <p class="why__row">— №1 —</p>
+              <p class="why__row">Седона - не аттракцион для туристов, там
+                течёт своя жизнь</p>
+            </div>
+            <ul class="why__sublist">
+              <li class="why__subitem">
+                <div class="why__subgroup">
+                  <h3 class="why__subtitle">Жильё</h3>
+                  <p class="why__subrow">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                </div>
+              </li>
+              <li class="why__subitem">
+                <div class="why__subgroup">
+                  <h3 class="why__subtitle">Еда</h3>
+                  <p class="why__subrow">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </div>
+              </li>
+              <li class="why__subitem">
+                <div class="why__subgroup">
+                  <h3 class="why__subtitle">Сувениры</h3>
+                  <p class="why__subrow">Не только китайского, но и местного
+                    производства!</p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="why__item">
+            <div class="why__group">
+              <h2 class="why__title">Там есть <br> мост дьявола</h2>
+              <p class="why__row">— №2 —</p>
+              <p class="why__row">Да, по нему можно пройти! Если конечно
+                вы осмелитесь</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <div class="why__group">
+              <h2 class="why__title">Небольшая площадь</h2>
+              <p class="why__row">— №3 —</p>
+              <p class="why__row">Все достопримечательности
+                находятся очень близко</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <div class="why__group">
+              <h2 class="why__title">Красивая дорога</h2>
+              <p class="why__row">— №4 —</p>
+              <p class="why__row">Ехать в седону из лас-вегаса совсем
+                не скучно!</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <div class="why__group">
+              <h2 class="why__title">Мало туристов</h2>
+              <p class="why__row">— №5 —</p>
+              <p class="why__row">Большинство едет в гранд каньон
+                и толпится там</p>
+            </div>
+          </li>
+        </ul>
+    </section>
+    <section class="offer">
+      <h2 class="offer__title">Заинтересовались?</h2>
+      <p class="offer__row">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+      <div class="search">
+        <p class="search__title">
+          <a class="search__link" href="#">Поиск гостиницы в Седоне</a>
+        </p>
+        <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="search__row">
+            <label class="search__label" for="date-first">Дата заезда:</label>
+            <input class="search__input" type="date" id="date-first" name="Дата заезда">
+          </p>
+          <p class="search__form">
+            <label class="search__label" for="date-two">Дата выезда:</label>
+            <input class="search__input" type="date" id="date-two" name="Дата выезда">
+          </p>
+          <p class="search__row">Взрослые:
+            <button class="search__button" type="button">-</button>
+            <input class="search__input" type="text" name="Взрослые">
+            <button class="search__button" type="button">+</button>
+          </p>
+          <p>Дети:
+            <button class="search__button" type="button">-</button>
+            <input class="search__input" type="text" name="Дети">
+            <button class="search__button" type="button">+</button>
+          </p>
+          <button class="search__submit" type="submit">Найти</button>
+        </form>
+      </div>
+      <img src="img/map.png" width="1199" height="594" alt="Карта проезда">
+    </section>
+
+  </main>
+  <footer class="footer">
+    <section class="footer__contacts">
+      <h2 class="footer__title">Контакты</h2>
+      <P class="footer__tag">#VISITSEDONA</P>
+      <p class="footer__phone">
+        <a class="footer__phone__link" href="tel:+74956660166">+7(495) 666-01-66</a>
+      </p>
+    </section>
+    <section class="footer__social">
+      <h2 class="footer__title">Мы в социальных сетях</h2>
+      <ul class="footer__list">
+        <li class="footer__item tw">
+          <a class="footer__link" href="#" aria-label="Мы в twitter"></a>
+        </li>
+        <li class="footer__item fb">
+          <a class="footer__link" href="#" aria-label="Мы в facebook"></a>
+        </li>
+        <li class="footer__item yt">
+          <a class="footer__link" href="#" aria-label="Мы в youtube"></a>
+        </li>
+      </ul>
+    </section>
+    <P class="footer__image">Website by
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="icons/logo-htmlacademy.png" width="115" height="41" alt="Лого академии">
+      </a>
+    </P>
+  </footer>
+</body>
+
 </html>
