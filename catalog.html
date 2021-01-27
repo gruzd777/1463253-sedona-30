@@ -4,13 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="icons/favicons/32.svg" type="image/svg+×ml">
+  <link rel="apple-touch-icon" href="icons/favicons/152.png">
   <title>Каталог - HTML Academy: Седона</title>
 </head>
 
 <body>
   <header class="header">
-    <a class="header__logo" aria-label="Логотип Седона">
-      <img src="icons/logo-main.png" width="138" height="70" alt="Логотип Седона">
+    <a class="header__logo" href="index.html">
+      <img src="icons/logo.svg" width="138" height="70" alt="Перейти на главную страницу сайта">
     </a>
     <nav class="header__menu">
       <ul class="header__list">
@@ -83,13 +86,23 @@
     </form>
     <section class="search">
       <h2>Найдено: 3</h2>
-      <ul class="main__search">Сортировка:
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По рейтингу</a></li>
+      <ul class="search__list">Сортировка:
+        <li class="search__item">
+          <a class="search__link" href="#">По цене</a>
+        </li>
+        <li class="search__item">
+          <a class="search__link" href="#">По типу</a>
+        </li>
+        <li class="search__item">
+          <a class="search__link" href="#">По рейтингу</a>
+        </li>
       </ul>
-      <img src="icons/icon-up-dir.png" alt="Вверх">
-      <img src="icons/icon-down-dir.png" alt="Вниз">
+      <a href="#">
+        <img src="icons/up.svg" alt="Пролистывание вверх">
+      </a>
+      <a href="#">
+        <img src="icons/down.svg" alt="Проилстывание вниз">
+      </a>
     </section>
     <section class="main__hotels">
       <h2>Список найденных отелей</h2>
@@ -97,45 +110,52 @@
         <li>
           <a href="#">
             <h3>Amara Resort & Spa</h3>
-            <img src="img/amara.png" alt="Гостиница Амара Резорт">
+            <img src="img/amara_hotel.jpg" alt="">
           </a>
           <p>Гостиница от 4000 Р.</p>
           <p>
             <a href="#">Подробнее</a>
             <button type="button">Забронировать</button>
           </p>
-          <p><img src="icons/star.png" alt="Звездочка"><img src="icons/star.png" alt="Звездочка">
-            <img src="icons/star.png" alt="Звездочка"><img src="icons/star.png" alt="Звездочка">
-            <img src="icons/star.png" alt="Звездочка">
+          <p>
+            <img src="icons/star.svg" alt="Звезда">
+            <img src="icons/star.svg" alt="Звезда">
+            <img src="icons/star.svg" alt="Звезда">
+            <img src="icons/star.svg" alt="Звезда">
+            <img src="icons/star.svg" alt="Звезда">
           </p>
           <p>Рейтинг: 8.5</p>
         </li>
         <li>
           <a href="#">
             <h3>Desert Quail Inn</h3>
-            <img src="img/desert.png" alt="Отель Дезерт">
+            <img src="img/desert_hotel.jpg" alt="">
           </a>
           <p>Мотель от 3000 Р.</p>
           <p>
             <a href="#">Подробнее</a>
             <button type="button">Забронировать</button>
           </p>
-          <p><img src="icons/star.png" alt="Звездочка"><img src="icons/star.png" alt="Звездочка">
-            <img src="icons/star.png" alt="Звездочка">
+          <p>
+            <img src="icons/star.svg" alt="Звезда">
+            <img src="icons/star.svg" alt="Звезда">
+            <img src="icons/star.svg" alt="Звезда">
           </p>
           <p>Рейтинг: 8.9</p>
         </li>
         <li>
           <a href="#">
             <h3>Villas at Poco Diablo</h3>
-            <img src="img/villas.png" alt="Апартаменты Вилла">
+            <img src="img/vilas_hotel.jpg" alt="">
           </a>
           <p>Апартаменты от 2000 Р.</p>
           <p>
             <a href="#">Подробнее</a>
             <button type="button">Забронировать</button>
           </p>
-          <p><img src="icons/star.png" alt="Звездочка"><img src="icons/star.png" alt="Звездочка">
+          <p>
+            <img src="icons/star.svg" alt="Звезда">
+            <img src="icons/star.svg" alt="Звезда">
           </p>
           <p>Рейтинг: 9.2</p>
         </li>
@@ -166,7 +186,7 @@
     </section>
     <P class="footer__image">Website by
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="icons/logo-htmlacademy.png" width="115" height="41" alt="Лого академии">
+        <img src="icons/logo-htmlacademy.svg" width="115" height="41" alt="Переход на лендинг Академии">
       </a>
     </P>
   </footer>
