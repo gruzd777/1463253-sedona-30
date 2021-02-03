@@ -1,0 +1,104 @@
+/* Variables */
+
+:root {
+    --basic-white: #ffffff;
+    --basic-blue: #81B3D2;
+    --basic-gray: #EEEEEE;
+    --form-gray: #F2F2F2;
+    --basic-braun: #766357;
+    --basic-black: #000000;
+    --text-special: #333333;
+}
+
+/* Global */
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--basic-white) no-repeat;
+    background-position: top center;
+    color: var(--basic-black);
+}
+
+a {
+    text-decoration: none;
+  }
+  
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+ul {
+    list-style: none;
+}
+
+/* Navigation */
+
+.header__menu {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.header__list {
+    list-style: none;
+}
+
+.header__link {
+    color: var(--basic-black);
+}
+
+.header__link:hover {
+    color: var(--basic-blue)
+}
+
+.header__link:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.header__link--active {
+    color: var(--basic-braun)
+}
+
+/* Promo */
+
+.welcome {
+    background: url(../img/background\ photo.jpg) no-repeat;
+}
+
+.welcome .welcome__title {
+    visibility: hidden;
+}
+
+/* Reasons */
+
+.why__title {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.why__row {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: var(--text-special);
+}
+
+.why__subrow {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--text-special);
+
+}
+
+
