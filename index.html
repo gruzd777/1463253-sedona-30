@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header container">
     <a class="header__logo">
       <img src="icons/logo.svg" width="138" height="70" alt="Перейти на главную страницу сайта">
     </a>
@@ -34,9 +34,9 @@
       </ul>
     </nav>
   </header>
-  <main class="main">
-    <section class="welcome">
-      <h1 class="welcome__title">Официальный сайт города "Седона"</h1>
+  <main class="main container">
+    <section class="promo">
+      <h1 class="promo__title">Официальный сайт города "Седона"</h1>
       <img src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать">
     </section>
     <section class="why">
@@ -81,7 +81,7 @@
           </div>
         </li>
         <li class="why__item">
-          <div class="why__group">
+          <div class="why__group gray">
             <h2 class="why__title">Небольшая площадь</h2>
             <p class="why__row">— №3 —</p>
             <p class="why__row">Все достопримечательности
@@ -89,7 +89,7 @@
           </div>
         </li>
         <li class="why__item">
-          <div class="why__group">
+          <div class="why__group gray">
             <h2 class="why__title">Красивая дорога</h2>
             <p class="why__row">— №4 —</p>
             <p class="why__row">Ехать в седону из лас-вегаса совсем
@@ -97,7 +97,7 @@
           </div>
         </li>
         <li class="why__item">
-          <div class="why__group">
+          <div class="why__group gray">
             <h2 class="why__title">Мало туристов</h2>
             <p class="why__row">— №5 —</p>
             <p class="why__row">Большинство едет в гранд каньон
@@ -108,7 +108,8 @@
     </section>
     <section class="offer">
       <h2 class="offer__title">Заинтересовались?</h2>
-      <p class="offer__row">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+      <p class="offer__row">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в
+        седоне
       </p>
       <div class="search">
         <p class="search__title">
@@ -125,15 +126,15 @@
           </p>
           <p class="search__row">Взрослые:
             <button class="search__button" type="button">-</button>
-            <input class="search__input" type="text" name="Взрослые">
+            <input class="search__input short" type="text" name="Взрослые">
             <button class="search__button" type="button">+</button>
           </p>
-          <p>Дети:
+          <p class="search__row">Дети:
             <button class="search__button" type="button">-</button>
-            <input class="search__input" type="text" name="Дети">
+            <input class="search__input short" type="text" name="Дети">
             <button class="search__button" type="button">+</button>
           </p>
-          <button class="search__submit" type="submit">Найти</button>
+          <button class="search__submit" type="submit"><span>Найти</span></button>
         </form>
       </div>
       <section class="map">
@@ -142,12 +143,12 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer container">
     <section class="footer__contacts">
       <h2 class="footer__title">Контакты</h2>
       <P class="footer__tag">#VISITSEDONA</P>
       <p class="footer__phone">
-        <a class="footer__phone-link" href="tel:+74956660166">+7(495) 666-01-66</a>
+        <a class="footer__phone--link" href="tel:+74956660166">+7(495) 666-01-66</a>
       </p>
     </section>
     <section class="footer__social">
@@ -164,7 +165,8 @@
         </li>
       </ul>
     </section>
-    <P class="footer__image">Website by
+    <P class="footer__image">
+      <img src="icons/Website by.png" alt="Сайт создан htmlacademy">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="icons/logo-htmlacademy.svg" width="115" height="41" alt="Переход на лендинг Академии">
       </a>
