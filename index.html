@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="icons/favicons/32.svg" type="image/svg+×ml">
+  <link rel="icon" href="icons/favicons/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icons/favicons/152.png">
 </head>
 
@@ -54,19 +54,19 @@
             <li class="why__subitem">
               <div class="why__subgroup">
                 <h3 class="why__subtitle">Жильё</h3>
-                <p class="why__subrow">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="why__subrow">Рекомендуем пожить в настоящем <br> мотеле, всё как в кино!</p>
               </div>
             </li>
             <li class="why__subitem">
               <div class="why__subgroup">
                 <h3 class="why__subtitle">Еда</h3>
-                <p class="why__subrow">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="why__subrow">Всегда заказывайте фирменный бургер, <br> вы не разочаруетесь!</p>
               </div>
             </li>
             <li class="why__subitem">
               <div class="why__subgroup">
                 <h3 class="why__subtitle">Сувениры</h3>
-                <p class="why__subrow">Не только китайского, но и местного
+                <p class="why__subrow">Не только китайского, но и местного <br>
                   производства!</p>
               </div>
             </li>
@@ -112,34 +112,36 @@
         седоне
       </p>
       <div class="search">
-        <p class="search__title">
-          <a class="search__link" href="#">Поиск гостиницы в Седоне</a>
-        </p>
+        <a class="search__link" href="#">
+          <p class="search__title">Поиск гостиницы в Седоне</p>
+        </a>
         <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="search__row">
-            <label class="search__label" for="date-first">Дата заезда:</label>
-            <input class="search__input" type="date" id="date-first" name="Дата заезда">
-          </p>
-          <p class="search__form">
-            <label class="search__label" for="date-two">Дата выезда:</label>
-            <input class="search__input" type="date" id="date-two" name="Дата выезда">
-          </p>
-          <p class="search__row">Взрослые:
-            <button class="search__button" type="button">-</button>
-            <input class="search__input short" type="text" name="Взрослые">
-            <button class="search__button" type="button">+</button>
-          </p>
-          <p class="search__row">Дети:
-            <button class="search__button" type="button">-</button>
-            <input class="search__input short" type="text" name="Дети">
-            <button class="search__button" type="button">+</button>
-          </p>
-          <button class="search__submit" type="submit"><span>Найти</span></button>
+ 
+            <p class="search__row">
+              <label class="search__label" for="date-first">Дата заезда:</label>
+              <input class="search__input" type="date" id="date-first" name="Дата заезда">
+            </p>
+            <p class="search__row">
+              <label class="search__label" for="date-two">Дата выезда:</label>
+              <input class="search__input" type="date" id="date-two" name="Дата выезда">
+            </p>
+            <p class="search__row inline_b">Взрослые:
+              <button class="search__button" type="button">-</button>
+              <input class="search__input--short" type="text" name="Взрослые">
+              <button class="search__button" type="button">+</button>
+            </p>
+            <p class="search__row inline_b">Дети:
+              <button class="search__button" type="button">-</button>
+              <input class="search__input--short" type="text" name="Дети">
+              <button class="search__button" type="button">+</button>
+            </p>
+            <button class="search__submit" type="submit"><span>Найти</span></button>
+
         </form>
       </div>
-      <section class="map">
+      <div class="map">
         <img src="img/map.png" width="1199" height="594" alt="Карта проезда">
-      </section>
+      </div>
     </section>
   </main>
 
@@ -165,12 +167,12 @@
         </li>
       </ul>
     </section>
-    <P class="footer__image">
-      <img src="icons/Website by.png" alt="Сайт создан htmlacademy">
+    <p class="footer__image">
+      <img src="icons/Website-by.png" alt="Сайт создан htmlacademy">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="icons/logo-htmlacademy.svg" width="115" height="41" alt="Переход на лендинг Академии">
       </a>
-    </P>
+    </p>
   </footer>
 </body>
 
