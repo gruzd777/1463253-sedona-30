@@ -193,10 +193,11 @@ img {
 .why__subitem {
     height: 330px;
     width: 400px;
-    padding-top: 160px;
+    /* padding-top: 160px; */
     box-sizing: border-box;
     margin: 0;
-
+    display: flex;
+    justify-content: center;
 }
 
 .why__img {
@@ -226,6 +227,13 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.why__subgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .gray {
