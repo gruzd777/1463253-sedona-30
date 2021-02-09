@@ -57,6 +57,7 @@ img {
 .header, .main, .footer {
     background: var(--basic-white);
     box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+
 }
 
 /* Grid */
@@ -85,28 +86,15 @@ img {
 
 .header__list {
     list-style: none;
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
 
-.header__item:first-child {
-    margin-left: 72px;
-}
-
-.header__item:last-child {
-    margin-right: 72px;
-}
-
-.header__item:nth-child(3) {
-    margin-left: 180px;
-}
-
-.header__item:nth-child(2) {
-    margin-right: 180px;
 }
 
 .header__link {
@@ -250,6 +238,9 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
+
+
 }
 
 .offer__title {
@@ -272,7 +263,6 @@ img {
     width: 586px;
     height: 481px;
     background-color: var(--basic-white);
-    box-sizing: border-box;
 }
 
 .search__title {
@@ -404,10 +394,44 @@ img {
     font: inherit;
 }
 
+.map {
+    width: 1200px;
+    height: 594px;
+    margin-bottom: -120px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* Footer */
 
 .footer {
     outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    height: 120px;
+    box-sizing: border-box;
+}
+
+.footer__title {
+    display: none;
+}
+
+.footer__list {
+    list-style: none;
+}
+
+.footer__contacts {
+    outline: 5px solid rgb(253, 215, 0);
+    outline-offset: -5px;
+}
+
+.footer__social {
+    outline: 5px solid rgba(29, 18, 175, 0.7);
     outline-offset: -5px;
 }
 
@@ -416,15 +440,14 @@ img {
     font-size: 21px;
     line-height: 26px;
     color: var(--basic-black);
+    text-align: center;
 }
  
 .footer__image {
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
-}
-
-.footer__title {
-    visibility: hidden;
+    outline: 5px solid rgba(101, 211, 12, 0.7);
+    outline-offset: -5px;
 }
 
