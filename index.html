@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -31,13 +32,12 @@
         <li class="header__item">
           <a class="header__link" href="catalog.html">Гостиницы</a>
         </li>
-
       </ul>
     </nav>
   </header>
   <main class="main container">
     <section class="promo">
-      <h1 class="promo__title">Официальный сайт города "Седона"</h1>
+      <h1 class="promo__title visually-hidden">Официальный сайт города "Седона"</h1>
       <img src="img/welcome.svg" width="457" height="351" alt="Добро пожаловать">
     </section>
     <section class="why">
@@ -129,24 +129,26 @@
         </a>
         <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
 
-          <p class="search__row">
+          <p class="search__row search__row--calendar">
             <label class="search__label" for="date-first">Дата заезда:</label>
-            <input class="search__input" type="date" id="date-first" name="Дата заезда">
+            <input class="search__input" type="text" id="date-first" name="Дата заезда">
           </p>
-          <p class="search__row">
+          <p class="search__row search__row--calendar">
             <label class="search__label" for="date-two">Дата выезда:</label>
-            <input class="search__input" type="date" id="date-two" name="Дата выезда">
+            <input class="search__input" type="text" id="date-two" name="Дата выезда">
           </p>
-          <p class="search__row inline_b">Взрослые:
-            <button class="search__button" type="button">-</button>
-            <input class="search__input--short" type="text" name="Взрослые">
-            <button class="search__button" type="button">+</button>
-          </p>
-          <p class="search__row inline_b">Дети:
-            <button class="search__button" type="button">-</button>
-            <input class="search__input--short" type="text" name="Дети">
-            <button class="search__button" type="button">+</button>
-          </p>
+          <div class="search__row__group">
+            <p class="search__row inline_b">Взрослые:
+              <button class="search__button minus" type="button"></button>
+              <input class="search__input--short" type="text" name="Взрослые">
+              <button class="search__button plus" type="button"></button>
+            </p>
+            <p class="search__row inline_b">Дети:
+              <button class="search__button minus" type="button"></button>
+              <input class="search__input--short" type="text" name="Дети">
+              <button class="search__button plus" type="button"></button>
+            </p>
+          </div>
           <button class="search__submit" type="submit"><span>Найти</span></button>
 
         </form>
@@ -159,14 +161,14 @@
 
   <footer class="footer container">
     <section class="footer__contacts">
-      <h2 class="footer__title">Контакты</h2>
+      <h2 class="footer__title visually-hidden">Контакты</h2>
       <P class="footer__tag">#VISITSEDONA</P>
       <p class="footer__phone">
         <a class="footer__phone--link" href="tel:+74956660166">+7(495) 666-01-66</a>
       </p>
     </section>
     <section class="footer__social">
-      <h2 class="footer__title">Мы в социальных сетях</h2>
+      <h2 class="footer__title visually-hidden">Мы в социальных сетях</h2>
       <ul class="footer__list">
         <li class="footer__item tw">
           <a href="#" class="footer__link" aria-label="Мы в twitter"></a>

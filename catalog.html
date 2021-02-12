@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,11 +7,13 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="icons/favicons/32.svg" type="image/svg+×ml">
   <link rel="apple-touch-icon" href="icons/favicons/152.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Каталог - HTML Academy: Седона</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header container">
     <a class="header__logo" href="index.html">
       <img src="icons/logo.svg" width="138" height="70" alt="Перейти на главную страницу сайта">
     </a>
@@ -32,13 +34,13 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>Каталог отелей</h1>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <section class="main__filter main__filter--apart">
-        <h2>Фильтр по жилью</h2>
+  <main class="main container">
+    <h1 class="visually-hidden">Каталог отелей</h1>
+    <section class="main__filter">
+      <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="visually-hidden">Фильтр по жилью</h2>
         <fieldset>
-          <legend>Инфраструктура</legend>
+          <legend>Инфраструктура:</legend>
           <ul class="main__list main__list--infracstructura">
             <li class="main__check">
               <input type="checkbox" name="Бассейн" id="waterpool" checked>
@@ -55,7 +57,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Тип жилья</legend>
+          <legend>Тип жилья:</legend>
           <ul class="main__list main__list--type">
             <li class="main__check">
               <input type="checkbox" name="Гостиница" id="hotel" checked>
@@ -71,37 +73,35 @@
             </li>
           </ul>
         </fieldset>
-      </section>
-
-      <section class="main__filter main__filter--price">
-        <h2>Фильтр по цене</h2>
-        <fieldset>
-          <legend>Стоимость в сутки (Р):</legend>
-          <p>от 0 | до 3000</p>
-          <label for="range"></label>
-          <input type="range" min="0" max="3000" id="range" name="price" step="500" value="2500">
+        <h2 class="visually-hidden">Фильтр по цене</h2>
+        <fieldset class="field__grid">
+          <div class="field__group">
+            <legend>Стоимость в сутки (Р):</legend>
+            <p>от 0 | до 3000</p>
+            <label for="range"></label>
+            <input type="range" min="0" max="3000" id="range" name="price" step="500" value="2500">
+          </div>
+          <button class="btn" type="submit">Показать</button>
         </fieldset>
-        <button type="submit">Показать</button>
-      </section>
-    </form>
-    <section class="search">
+      </form>
+    </section>
+
+    <section class="results">
       <h2>Найдено: 3</h2>
-      <ul class="search__list">Сортировка:
-        <li class="search__item">
-          <a class="search__link" href="#">По цене</a>
+      <ul class="results__list">Сортировка:
+        <li class="results__item">
+          <a class="results__link" href="#">По цене</a>
         </li>
-        <li class="search__item">
-          <a class="search__link" href="#">По типу</a>
+        <li class="results__item">
+          <a class="results__link" href="#">По типу</a>
         </li>
-        <li class="search__item">
-          <a class="search__link" href="#">По рейтингу</a>
+        <li class="results__item">
+          <a class="results__link" href="#">По рейтингу</a>
         </li>
       </ul>
       <a href="#">Сортировка по возрастанию</a>
       <a href="#">Сортировка по убыванию</a>
-    </section>
-    <section class="main__hotels">
-      <h2>Список найденных отелей</h2>
+      <h2 class="visually-hidden">Список найденных отелей</h2>
       <ul class="main__hotels-list">
         <li>
           <a href="#">
@@ -158,16 +158,16 @@
       </ul>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer container">
     <section class="footer__contacts">
-      <h2 class="footer__title">Контакты</h2>
+      <h2 class="footer__title visually-hidden">Контакты</h2>
       <P class="footer__tag">#VISITSEDONA</P>
       <p class="footer__phone">
         <a class="footer__phone__link" href="tel:+74956660166">+7(495) 666-01-66</a>
       </p>
     </section>
     <section class="footer__social">
-      <h2 class="footer__title">Мы в социальных сетях</h2>
+      <h2 class="footer__title visually-hidden">Мы в социальных сетях</h2>
       <ul class="footer__list">
         <li class="footer__item tw">
           <a class="footer__link" href="#" aria-label="Мы в twitter"></a>
