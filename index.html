@@ -135,18 +135,24 @@
             <label class="search__label" for="date-two">Дата выезда:</label>
             <input class="search__input" type="text" id="date-two" name="Дата выезда">
           </p>
-            <p class="search__row">
+          <div class="row__group">
+            <div class="search__row">
               <label class="search__label" for="big">Взрослые:</label>
-              <button class="search__button minus" type="button"></button>
-              <input class="search__input--short" id="big" type="text" name="Взрослые">
-              <button class="search__button plus" type="button"></button>
-            </p>
-            <p class="search__row">
+            <div class="button__group">
+              <button class="search__button" type="button"></button>
+              <input class="search__input search__input--short" id="big" type="text" name="Взрослые">
+              <button class="search__button" type="button"></button>
+            </div>
+            </div>
+            <div class="search__row">
               <label class="search__label" for="little">Дети:</label>
-              <button class="search__button minus" type="button"></button>
-              <input class="search__input--short" id="little" type="text" name="Дети">
-              <button class="search__button plus" type="button"></button>
-            </p>
+            <div class="button__group">
+              <button class="search__button" type="button"></button>
+              <input class="search__input search__input--short" id="little" type="text" name="Дети">
+              <button class="search__button" type="button"></button>
+            </div>
+            </div>
+          </div>
           <button class="search__submit" type="submit"><span>Найти</span></button>
 
         </form>
