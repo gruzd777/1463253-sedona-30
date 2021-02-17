@@ -134,7 +134,8 @@ img {
 }
 
 .header__link--active {
-    color: var(--basic-braun)
+    color: var(--basic-braun);
+    cursor: default;
 }
 
 /* Promo */
@@ -145,8 +146,8 @@ img {
     background-position: center bottom, center top;
     background-color: var(--page-background);
     text-align: center;
-    height: 509px;
-    padding-top: 76px;
+    min-height: 509px;
+    padding: 77px 372px 81px 372px;
     box-sizing: border-box;
     margin-bottom: 42px;
     margin-top: -14px;
@@ -289,6 +290,7 @@ img {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    position: relative;
 }
 
 .offer__title {
@@ -305,6 +307,7 @@ img {
     font-weight: 400;
     color: var(--text-special);
     text-align: center;
+    margin: 0px 0px 139px 0px;
 }
 
 /* Search modal window*/
@@ -313,6 +316,8 @@ img {
     width: 568px;
     background-color: var(--basic-white);
     box-sizing: border-box;
+    position: absolute;
+    top: 208px;
 }
 
 .search__title {
@@ -350,33 +355,32 @@ img {
     text-align: center;
     width: 568px;
     box-sizing: border-box;
-    padding: 56px 56px 55px 54px;
+    padding: 56px 55px 55px 55px;
     display: flex;
     flex-direction: column;
 }
 
 .search__row {
-    margin: 0;
+    margin: 0px 0px 30px 0px;
     padding: 0;
-    outline: 5px solid tomato;
-    outline-offset: -5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
-.search__label {
-    outline: 5px solid lightskyblue;
-    outline-offset: -5px;
+.search__row:nth-child(3) {
+    margin: 0px 0px 54px 0px;
+}
+
+.search__label--inline {
+    margin-right: 40px;
 }
 
 .row__group {
     display: flex;
     justify-content: space-between;
-}
-
-.button__group {
-    width: 114px;
-    display: flex;
+    margin-bottom: 14px;
 }
 
 .search__submit {
@@ -406,21 +410,6 @@ img {
     opacity: 0.3;
 }
 
-
-/* .search__row--calendar {
-    position: relative;
-} */
-
-/* .search__row--calendar::after {
-    content: '';
-    width: 21px;
-    height: 23px;
-    position: absolute;
-    top: 6px;
-    right: 21px;
-    background: url(../icons/calendar.svg) no-repeat;
-} */
-
 .search__button {
     border: none;
     padding: 0;
@@ -440,32 +429,52 @@ img {
     font: inherit;
     outline: none;
     box-sizing: border-box;
-    outline: 5px solid seagreen;
-    outline-offset: -5px;
 }
 
+.search__row .calendar {
+    position: absolute;
+    top: 6px;
+    right: 9px;
+}
+
+.search__row .plus {
+    position: absolute;
+    top: 14px;
+    right: 13px;
+}
+
+.search__row .minus {
+    position: absolute;
+    top: 18px;
+    right: 85px;
+}
+
+
+.search__row .calendar:hover path,
+.search__row .plus:hover path, 
+.search__row .minus:hover rect {
+    fill: var(--basic-black);
+}
+
+.search__row .calendar:active path,
+.search__row .plus:active path, 
+.search__row .minus:active rect {
+    fill: var(--basic-blue);
+}
 
 .search__input:hover {
     background: var(--form-hover);
 }
 
-.search__input:focus {
+.search__input:focus:not(.search__input--short) {
     background: var(--basic-white);
     border: 2px solid var(--form-focus);
 }
 
 .search__input--short {
     width: 38px;
-    /* text-align: center;
-    height: 38px;
-    background: var(--form-gray);
-    font-size: 14px;
-    line-height: 26px;
-    border: none;
-    outline: none;
-    padding: 0;
-    margin: 0; */
     font: inherit;
+    text-align: center;
 }
 
 .map {
@@ -485,7 +494,10 @@ img {
     align-items: center;
     background: rgba(255, 255, 255, 0.9);
     padding: 7.5px 0 7.5px 0;
+    z-index: 1;
 }
+
+/* Footer SOCIAL */
 
 .footer__list {
     list-style: none;
@@ -529,7 +541,9 @@ img {
     color: var(--basic-black);
     text-align: center;
 }
- 
+
+/* Footer LOGO */
+
 .footer__image {
     font-weight: normal;
     font-size: 14px;
@@ -538,6 +552,11 @@ img {
     justify-content: space-between;
     align-content: center;
     width: 196px;
+}
+
+.footer__image span {
+    display: block;
+    line-height: 41px;
 }
 
 .footer__image img {
@@ -583,8 +602,6 @@ legend:not(:last-child) {
     outline: 5px solid rgba(101, 211, 12, 0.7);
     outline-offset: -5px;
     background: url(../img/background_filter.jpg) no-repeat center top;
-    /* padding: 26.5px 72px 32px 72px; */
-    /* background-size: cover; */
 }
 
 .main-form {
