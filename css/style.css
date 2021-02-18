@@ -141,16 +141,23 @@ img {
 /* Promo */
 
 .promo {
-    background-image: url(../img/Shape.png), url(../img/background-photo.jpg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: center bottom, center top;
-    background-color: var(--page-background);
+    background: var(--page-background) url(../img/background-photo.jpg) no-repeat center top;
     text-align: center;
+    width: 1200px;
     min-height: 509px;
-    padding: 77px 372px 81px 372px;
+    padding: 77px 0px 81px 0px;
     box-sizing: border-box;
-    margin-bottom: 42px;
     margin-top: -14px;
+    position: relative;
+}
+
+.promo::before {
+    content: "";
+    position: absolute;
+    width: 1200px;
+    height: 57px;
+    background: url(../img/mask.svg) no-repeat;
+    background-position: 100px 100px;
 }
 
 /* Reasons */
@@ -161,12 +168,13 @@ img {
     text-align: center;
     font-weight: 700;
     margin: 0px 0px 25px 0px;
-    padding: 0;
+    padding: 0px 10px;
+
 }
 
 
 .why__title--space {
-    margin-bottom: 49px;
+    margin: 42px 0px 49px 0px;
 }
 
 .why__row {
@@ -176,7 +184,7 @@ img {
     text-align: center;
     color: var(--text-special);
     margin: 0px 0px 23px 0px;
-    padding: 0;
+    padding: 0px 10px;
 }
 
 .why__row:last-child {
@@ -216,7 +224,12 @@ img {
 .why__item-flex {
     display: flex;
     justify-content: center;
-} 
+    flex-wrap: wrap;
+}
+
+.why__item-flex-gray {
+    background: var(--basic-gray) !important
+}
 
 .why__subitem {
     width: 400px;
@@ -479,7 +492,6 @@ img {
 
 .map {
     width: 1200px;
-    height: 594px;
     margin-bottom: -120px;
     box-sizing: border-box;
     padding: 0;
@@ -505,14 +517,22 @@ img {
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 150px;
     flex-wrap: wrap;
 }
 
 .footer__item {
-    margin: 0;
+    margin-right: 6px;
     padding: 0;
+}
+
+.footer__item:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.footer__item:nth-child(n+4) {
+    margin-top: 6px;
 }
 
 .footer__link {
