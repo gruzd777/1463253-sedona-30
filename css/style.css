@@ -469,7 +469,6 @@ img {
     position: absolute;
     top: 6px;
     right: 9px;
-    /* z-index: -1; */
 }
 
 .search__row .plus {
