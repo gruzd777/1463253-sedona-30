@@ -97,7 +97,7 @@ img {
 .header__menu {
     font-size: 14px;
     line-height: 26px;
-    margin-top: -55px;
+    margin-top: -73px;
 }
 
 .header__list {
@@ -107,7 +107,7 @@ img {
     align-items: center;
     flex-wrap: wrap;
     width: 1054px;
-    margin: 0 auto;
+    margin: 15px auto 0px auto;
     padding: 0;
 }
 
@@ -163,19 +163,45 @@ img {
 
 /* Reasons */
 
+.why__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.why__item {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.why__group {
+    width: 400px;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 47px 10px 54px;
+    min-height: 256px;
+    background: var(--basic-blue);
+}
+
 .why__title {
     font-size: 21px;
     line-height: 21px;
     text-align: center;
     font-weight: 700;
     margin: 0px 0px 25px 0px;
-    padding: 0px 10px;
-
 }
-
 
 .why__title--space {
     margin: 42px 0px 49px 0px;
+    padding: 0px 10px;
 }
 
 .why__row {
@@ -185,41 +211,28 @@ img {
     text-align: center;
     color: var(--text-special);
     margin: 0px 0px 23px 0px;
-    padding: 0px 10px;
 }
 
 .why__row:last-child {
     margin: 0;
 }
 
-.white {
+.why__img {
+    width: 800px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+}
+
+
+.why__group .white {
     color: var(--basic-white);
 }
 
 .why__row--space {
     margin-bottom: 51px;
-}
-
-.why__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
- 
-}
-
-.why__sublist {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    text-align: center;
-
-}
-
-.why__item {
-    padding: 0;
-    margin: 0;
-
+    padding: 0px 10px;
 }
 
 .why__item-flex {
@@ -229,7 +242,18 @@ img {
 }
 
 .why__item-flex-gray {
-    background: var(--basic-gray) !important
+    background: var(--basic-gray) !important;
+}
+
+/* Sublist */
+
+.why__sublist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .why__subitem {
@@ -237,27 +261,40 @@ img {
     box-sizing: border-box;
     margin: 0;
     display: flex;
-    justify-content: center;
-    padding: 55px 0 82px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 55px 10px 81px;
+    min-height: 330px;
 }
 
-.why__subgroup .home {
-    margin: 0 0 28px 0;
+.why__subitem.home::before {
+    content: "";
+    width: 75px;
+    height: 72px;
+    background: url(../icons/icon-home.svg) no-repeat;
+    align-self: center;
+    margin-bottom: 28px;
+    background-size: contain;
 }
 
-.why__subgroup .burger {
-    margin: 0 0 29px 0;
+.why__subitem.burger::before {
+    content: "";
+    width: 75px;
+    height: 70px;
+    background: url(../icons/icon-burger.svg) no-repeat;
+    align-self: center;
+    margin-bottom: 29px;
+    background-size: contain;
 }
 
-.why__subgroup .gift {
-    margin: 0 0 28px 0;
-}
-
-.why__img {
-    width: 800px;
-    height: auto;
-    margin: 0;
-    padding: 0;
+.why__subitem.gift::before {
+    content: "";
+    width: 64px;
+    height: 77px;
+    background: url(../icons/icon-gift.svg) no-repeat;
+    align-self: center;
+    margin-bottom: 28px;
 }
 
 .why__subtitle {
@@ -274,23 +311,6 @@ img {
     color: var(--text-special);
     margin: 0;
     padding: 0;
-}
-
-.why__group {
-    background: var(--basic-blue);
-    box-sizing: border-box;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 49px 0px 54px 0px;
-}
-
-.why__subgroup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .gray {
@@ -449,6 +469,7 @@ img {
     position: absolute;
     top: 6px;
     right: 9px;
+    /* z-index: -1; */
 }
 
 .search__row .plus {
@@ -526,6 +547,7 @@ img {
 .footer__item {
     margin-right: 6px;
     padding: 0;
+    /* margin-bottom: 6px; */
 }
 
 .footer__item:nth-child(3n+3) {
