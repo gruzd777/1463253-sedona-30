@@ -73,7 +73,7 @@
           </ul>
         </fieldset>
         <h2 class="visually-hidden">Фильтр по цене</h2>
-        <fieldset class="field__grid">
+        <fieldset>
           <div class="field__group">
             <legend>Стоимость в сутки (Р):</legend>
             <p>от 0 | до 3000</p>
@@ -86,73 +86,101 @@
     </section>
 
     <section class="results">
-      <h2>Найдено: 3</h2>
-      <ul class="results__list">Сортировка:
-        <li class="results__item">
-          <a class="results__link" href="#">По цене</a>
-        </li>
-        <li class="results__item">
-          <a class="results__link" href="#">По типу</a>
-        </li>
-        <li class="results__item">
-          <a class="results__link" href="#">По рейтингу</a>
-        </li>
-      </ul>
-      <a href="#">Сортировка по возрастанию</a>
-      <a href="#">Сортировка по убыванию</a>
+      <div class="results__breadcrumbs">
+        <h2>Найдено: 3</h2>
+        <ul class="results__list">Сортировка:
+          <li class="results__item">
+            <a class="results__link" href="#">По цене</a>
+          </li>
+          <li class="results__item">
+            <a class="results__link" href="#">По типу</a>
+          </li>
+          <li class="results__item">
+            <a class="results__link" href="#">По рейтингу</a>
+          </li>
+        </ul>
+        <div class="button__group">
+          <a href="#" aria-label="Сортировка по возрастанию">Сортировка вверх</a>
+          <a href="#" aria-label="Сортировка по возрастанию">Сортировка вниз</a>
+        </div>
+      </div>
       <h2 class="visually-hidden">Список найденных отелей</h2>
       <ul class="main__hotels-list">
         <li>
-          <a href="#">
-            <h3>Amara Resort & Spa</h3>
-            <img src="img/amara_hotel.jpg" alt="">
-          </a>
-          <p>Гостиница от 4000 Р.</p>
-          <p>
-            <a href="#">Подробнее</a>
-            <button type="button">Забронировать</button>
-          </p>
-          <p>
-            <img src="icons/star.svg" alt="Звезда">
-            <img src="icons/star.svg" alt="Звезда">
-            <img src="icons/star.svg" alt="Звезда">
-            <img src="icons/star.svg" alt="Звезда">
-            <img src="icons/star.svg" alt="Звезда">
-          </p>
-          <p>Рейтинг: 8.5</p>
+          <div class="group__item">
+            <a href="">
+              <img src="img/amara_hotel.jpg" alt="">
+            </a>
+          </div>
+          <div class="group__item grow">
+            <a href="#">
+              <h3>Amara Resort & Spa</h3>
+            </a>
+            <p>Гостиница от 4000 Р.</p>
+            <p>
+              <a class="more" href="#">Подробнее</a>
+              <button type="button">Забронировать</button>
+            </p>
+          </div>
+          <div class="group__item stars">
+            <p>
+              <img src="icons/star.svg" alt="Звезда">
+              <img src="icons/star.svg" alt="Звезда">
+              <img src="icons/star.svg" alt="Звезда">
+              <img src="icons/star.svg" alt="Звезда">
+              <img src="icons/star.svg" alt="Звезда">
+            </p>
+            <p>Рейтинг: 8.5</p>
+          </div>
         </li>
         <li>
-          <a href="#">
-            <h3>Desert Quail Inn</h3>
-            <img src="img/desert_hotel.jpg" alt="">
-          </a>
-          <p>Мотель от 3000 Р.</p>
-          <p>
-            <a href="#">Подробнее</a>
-            <button type="button">Забронировать</button>
-          </p>
-          <p>
-            <img src="icons/star.svg" alt="Звезда">
-            <img src="icons/star.svg" alt="Звезда">
-            <img src="icons/star.svg" alt="Звезда">
-          </p>
-          <p>Рейтинг: 8.9</p>
+          <div class="group__item">
+            <a href="">
+              <img src="img/desert_hotel.jpg" alt="">
+            </a>
+          </div>
+          <div class="group__item grow">
+            <a href="#">
+              <h3>Desert Quail Inn</h3>
+            </a>
+            <p>Мотель от 3000 Р.</p>
+            <p>
+              <a class="more" href="#">Подробнее</a>
+              <button type="button">Забронировать</button>
+            </p>
+          </div>
+          <div class="group__item stars">
+            <p>
+              <img src="icons/star.svg" alt="Звезда">
+              <img src="icons/star.svg" alt="Звезда">
+              <img src="icons/star.svg" alt="Звезда">
+            </p>
+            <p>Рейтинг: 8.9</p>
+          </div>
         </li>
         <li>
-          <a href="#">
-            <h3>Villas at Poco Diablo</h3>
-            <img src="img/vilas_hotel.jpg" alt="">
-          </a>
-          <p>Апартаменты от 2000 Р.</p>
-          <p>
-            <a href="#">Подробнее</a>
-            <button type="button">Забронировать</button>
-          </p>
-          <p>
-            <img src="icons/star.svg" alt="Звезда">
-            <img src="icons/star.svg" alt="Звезда">
-          </p>
-          <p>Рейтинг: 9.2</p>
+          <div class="group__item">
+            <a href="">
+              <img src="img/desert_hotel.jpg" alt="">
+            </a>
+          </div>
+          <div class="group__item grow">
+            <a href="#">
+              <h3>Villas at Poco Diablo</h3>
+            </a>
+            <p>Апартаменты от 2000 Р.</p>
+            <p>
+              <a class="more" href="#">Подробнее</a>
+              <button type="button">Забронировать</button>
+            </p>
+          </div>
+          <div class="group__item stars">
+            <p>
+              <img src="icons/star.svg" alt="Звезда">
+              <img src="icons/star.svg" alt="Звезда">
+            </p>
+            <p>Рейтинг: 9.2</p>
+          </div>
         </li>
       </ul>
     </section>

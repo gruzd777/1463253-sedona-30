@@ -19,6 +19,8 @@
     --page-background: #888888;
     --text-form-hover: rgba(255, 255, 255, 0.3);
     --opacity-logo: #BDBBBC;
+    --light-black: #333333;
+    --super-light-black: #666666;
 }
 
 /* Global */
@@ -593,12 +595,13 @@ img {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    width: 196px;
+    margin: 0;
 }
 
 .footer__image span {
     display: block;
     line-height: 41px;
+    margin-right: 6px;
 }
 
 .footer__image img {
@@ -632,23 +635,25 @@ fieldset {
 
 legend:not(:last-child) {
     margin-bottom: 24px;
-}
-
-.field__grid {
-    display: grid;
-    justify-items: center;
-    align-items: center;
+    font-weight: 700;
 }
 
 .main__filter {
     outline: 5px solid rgba(101, 211, 12, 0.7);
     outline-offset: -5px;
-    background: url(../img/background_filter.jpg) no-repeat center top;
+    background: var(--page-background) url(../img/background_filter.jpg) no-repeat center top;
+    background-size: cover;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-white);
+    padding: 26.5px 73px 31px 72px;
 }
 
 .main-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .main__list, .main__check {
@@ -656,7 +661,156 @@ legend:not(:last-child) {
     margin: 0;
     padding: 0;
 }
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 .main__check {
     margin-bottom: 25px;
+}
+
+.results__breadcrumbs {
+    display: flex;
+    padding: 29px 73px 31px 73px;
+    align-items: center;
+    outline: 5px solid tomato;
+    outline-offset: -5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.results__breadcrumbs h2 {
+    margin: 0 46px 0 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.results__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    flex-grow: 1;
+}
+
+.results__list li:not(:first-child) {
+    margin: 0 0 0 30px;
+}
+
+.results__list li:first-child {
+    margin: 0 0 0 40px;
+}
+
+.main__hotels-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    outline: 5px solid yellowgreen;
+    outline-offset: -5px;
+    width: 100%;
+}
+
+.main__hotels-list li {
+    outline: 5px solid rebeccapurple;
+    outline-offset: -5px;
+    padding: 23.5px 72px 30px 73px;
+    display: flex;
+}
+
+.group__item {
+    /* outline: 5px solid yellow;
+    outline-offset: -5px; */
+}
+
+.group__item h3 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+}
+
+.group__item p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+.group__item.grow {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 29px;
+}
+
+.group__item.grow p,
+.group__item.grow a {
+    color: var(--light-black);
+    display: flex;
+    margin-right: 6px;
+
+}
+
+.group__item.grow > a {
+    color: var(--basic-black);
+}
+
+.group__item.grow .more {
+    color: var(--basic-white);
+    background: var(--basic-blue);
+    width: 110px;
+    height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 27px;
+    cursor: pointer;
+    display: block;
+}
+
+.group__item.grow button {
+    border: none;
+    color: var(--basic-white);
+    background: var(--basic-braun);
+    width: 142px;
+    height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 27px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.group__item.stars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 110px;
+    text-align: right;
+}
+
+.group__item.stars p:last-child {
+    background: var(--form-gray);
+    text-align: center;
+    color: var(--super-light-black);
+    width: 110px;
+    height: 27px;
+    line-height: 27px;
 }
