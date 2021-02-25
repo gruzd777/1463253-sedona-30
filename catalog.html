@@ -38,7 +38,7 @@
     <section class="main__filter">
       <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Фильтр по жилью</h2>
-        <fieldset>
+        <fieldset class="options">
           <legend>Инфраструктура:</legend>
           <ul class="main__list main__list--infracstructura">
             <li class="main__check">
@@ -55,7 +55,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="houses">
           <legend>Тип жилья:</legend>
           <ul class="main__list main__list--type">
             <li class="main__check">
@@ -73,14 +73,32 @@
           </ul>
         </fieldset>
         <h2 class="visually-hidden">Фильтр по цене</h2>
-        <fieldset>
-          <div class="field__group">
+        <fieldset class="cost">
             <legend>Стоимость в сутки (Р):</legend>
-            <p>от 0 | до 3000</p>
+            <div class="range__filter">
+              <div class="price__controls">
+
+              </div>
+              <div class="range__controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toogle__min"></div>
+                <div class="toggle toogle__max"></div>
+              </div>
+            </div>
+      
+
+
+
+
+
+
+
+            <!-- <p>от 0 | до 3000</p>
             <label for="range"></label>
             <input type="range" min="0" max="3000" id="range" name="price" step="500" value="2500">
-          </div>
-          <button class="btn" type="submit">Показать</button>
+          <button class="btn" type="submit">Показать</button> -->
         </fieldset>
       </form>
     </section>
@@ -108,18 +126,18 @@
       <ul class="main__hotels-list">
         <li>
           <div class="group__item">
-            <a href="">
-              <img src="img/amara_hotel.jpg" alt="">
+            <a href="#">
+              <img src="img/amara_hotel.jpg" width="135" height="90" alt="">
             </a>
           </div>
           <div class="group__item grow">
             <a href="#">
               <h3>Amara Resort & Spa</h3>
             </a>
-            <p>Гостиница от 4000 Р.</p>
-            <p>
-              <a class="more" href="#">Подробнее</a>
-              <button type="button">Забронировать</button>
+            <p class="group__price">Гостиница от 4000 Р.</p>
+            <p class="group__links">
+              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="booking">Забронировать</a>
             </p>
           </div>
           <div class="group__item stars">
@@ -135,18 +153,18 @@
         </li>
         <li>
           <div class="group__item">
-            <a href="">
-              <img src="img/desert_hotel.jpg" alt="">
+            <a href="#">
+              <img src="img/desert_hotel.jpg" width="135" height="90" alt="">
             </a>
           </div>
           <div class="group__item grow">
             <a href="#">
               <h3>Desert Quail Inn</h3>
             </a>
-            <p>Мотель от 3000 Р.</p>
-            <p>
-              <a class="more" href="#">Подробнее</a>
-              <button type="button">Забронировать</button>
+            <p class="group__price">Мотель от 3000 Р.</p>
+            <p class="group__links">
+              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="booking">Забронировать</a>
             </p>
           </div>
           <div class="group__item stars">
@@ -160,18 +178,18 @@
         </li>
         <li>
           <div class="group__item">
-            <a href="">
-              <img src="img/desert_hotel.jpg" alt="">
+            <a href="#">
+              <img src="img/vilas_hotel.jpg" width="135" height="90" alt="">
             </a>
           </div>
           <div class="group__item grow">
             <a href="#">
               <h3>Villas at Poco Diablo</h3>
             </a>
-            <p>Апартаменты от 2000 Р.</p>
-            <p>
-              <a class="more" href="#">Подробнее</a>
-              <button type="button">Забронировать</button>
+            <p class="group__price">Апартаменты от 2000 Р.</p>
+            <p class="group__links">
+              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="booking">Забронировать</a>
             </p>
           </div>
           <div class="group__item stars">

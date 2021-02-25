@@ -373,6 +373,7 @@ img {
     box-sizing: border-box;
 }
 
+
 .search__link:hover .search__title {
     background: var(--form-link-hover);
 }
@@ -392,9 +393,11 @@ img {
     width: 568px;
     box-sizing: border-box;
     padding: 56px 55px 55px 55px;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+    display: none;
 }
+
 
 .search__row {
     margin: 0px 0px 30px 0px;
@@ -675,8 +678,6 @@ legend:not(:last-child) {
     display: flex;
     padding: 29px 73px 31px 73px;
     align-items: center;
-    outline: 5px solid tomato;
-    outline-offset: -5px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -716,21 +717,26 @@ legend:not(:last-child) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    outline: 5px solid yellowgreen;
-    outline-offset: -5px;
     width: 100%;
 }
 
 .main__hotels-list li {
-    outline: 5px solid rebeccapurple;
-    outline-offset: -5px;
     padding: 23.5px 72px 30px 73px;
+    display: flex;
+    border-top: 1px solid var(--form-focus);
+}
+
+.main__hotels-list li:last-child {
+    border-bottom: 1px solid var(--form-focus);
+}
+
+.group__item:first-child {
     display: flex;
 }
 
-.group__item {
-    /* outline: 5px solid yellow;
-    outline-offset: -5px; */
+.group__item:first-child a {
+    display: flex;
+    align-items: flex-end;
 }
 
 .group__item h3 {
@@ -757,23 +763,28 @@ legend:not(:last-child) {
     margin-left: 29px;
 }
 
-.group__item.grow p,
-.group__item.grow a {
-    color: var(--light-black);
+.group__item.grow p {
     display: flex;
-    margin-right: 6px;
-
 }
 
 .group__item.grow > a {
     color: var(--basic-black);
+    margin-bottom: 7px;
+}
+
+.group__item.grow .group__price {
+    margin-bottom: 15.5px;
+    color: var(--light-black);
+}
+
+.group__links a {
+    margin-right: 6px;
 }
 
 .group__item.grow .more {
     color: var(--basic-white);
     background: var(--basic-blue);
     width: 110px;
-    height: 27px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -783,19 +794,17 @@ legend:not(:last-child) {
     display: block;
 }
 
-.group__item.grow button {
-    border: none;
+.group__item.grow .booking {
     color: var(--basic-white);
     background: var(--basic-braun);
     width: 142px;
-    height: 27px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     line-height: 27px;
     cursor: pointer;
-    padding: 0;
+    display: block;
 }
 
 .group__item.stars {
