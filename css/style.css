@@ -21,6 +21,8 @@
     --opacity-logo: #BDBBBC;
     --light-black: #333333;
     --super-light-black: #666666;
+    --toggle: #ABABAB;
+    --toogle-shadow: rgba(171, 171, 171, 0.3);
 }
 
 /* Global */
@@ -62,7 +64,6 @@ img {
 .header, .main, .footer {
     background: var(--basic-white);
     box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-    /* overflow: hidden; */
 }
 
 .visually-hidden {
@@ -630,16 +631,131 @@ img {
 
 /* page two */
 
-fieldset {
+.filter__item {
     margin: 0;
     padding: 0;
     border: none;
 }
 
-legend:not(:last-child) {
-    margin-bottom: 24px;
+.filter__item--cost {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter__item button {
+    margin-top: 33px;
+    width: 137px;
+    padding: 5px;
+    align-self: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    background: transparent;
+    border: 2px solid var(--basic-white);
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+
+legend {
     font-weight: 700;
 }
+
+.range__filter {
+    width: 317px;
+    box-sizing: border-box;
+    margin-top: 10.5px;
+}
+
+.price__controls {
+    display: flex;
+    border: 2px solid var(--basic-white);
+    padding: 6px;
+    position: relative;
+}
+
+.price__controls::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    top: 5px;
+    left: 157.5px;
+    background: var(--basic-white);
+}
+
+
+.price__controls label {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.price__controls .min__price {
+    margin-left: 46px;
+}
+
+.price__controls .max__price {
+    margin-left: 95px;
+}
+
+/* .price__controls .max__price::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 22px;
+    top: 10px;
+    left: 0;
+    background: var(--basic-white);
+} */
+
+.price__controls input {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    background: transparent;
+    color: var(--basic-white);
+    width: 40px;
+}
+
+.range__controls {
+    position: relative;
+}
+
+.range__controls .scale {
+    height: 2px;
+    background-color: var(--text-form-hover);
+    margin-top: 20px;
+}
+ 
+
+.range__controls .bar {
+    height: 2px;
+    background-color: var(--basic-white);
+    width: 80%;
+}
+
+.range__controls .toggle {
+    width: 4px;
+    height: 4px;
+    border: 8px solid var(--basic-white);
+    background: var(--toggle);
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 var(--toogle-shadow);
+    position: absolute;
+    top: -9px;
+    left: 0;
+    cursor: pointer;
+}
+
+.range__controls .toggle__min {
+    left: 0px;
+  }
+  
+.range__controls .toggle__max {
+    left: 240px;
+  }
 
 .main__filter {
     outline: 5px solid rgba(101, 211, 12, 0.7);

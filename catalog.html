@@ -38,7 +38,7 @@
     <section class="main__filter">
       <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Фильтр по жилью</h2>
-        <fieldset class="options">
+        <fieldset class="filter__item filter__item--options">
           <legend>Инфраструктура:</legend>
           <ul class="main__list main__list--infracstructura">
             <li class="main__check">
@@ -55,7 +55,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="houses">
+        <fieldset class="filter__item filter__item--houses">
           <legend>Тип жилья:</legend>
           <ul class="main__list main__list--type">
             <li class="main__check">
@@ -73,32 +73,34 @@
           </ul>
         </fieldset>
         <h2 class="visually-hidden">Фильтр по цене</h2>
-        <fieldset class="cost">
-            <legend>Стоимость в сутки (Р):</legend>
-            <div class="range__filter">
-              <div class="price__controls">
-
-              </div>
-              <div class="range__controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="toggle toogle__min"></div>
-                <div class="toggle toogle__max"></div>
-              </div>
+        <fieldset class="filter__item filter__item--cost">
+          <legend>Стоимость в сутки (Р):</legend>
+          <div class="range__filter">
+            <div class="price__controls">
+              <label class="min__price">
+                от <input type="text" name="min-price" value="0" min="0" max="3000" step="100">
+              </label>
+              <label class="max__price">
+                до <input type="text" name="max-price" value="3000" min="0" max="3000" step="100">
+              </label>
             </div>
-      
 
-
-
-
-
-
-
-            <!-- <p>от 0 | до 3000</p>
-            <label for="range"></label>
-            <input type="range" min="0" max="3000" id="range" name="price" step="500" value="2500">
-          <button class="btn" type="submit">Показать</button> -->
+            <div class="range__controls">
+              <div class="scale">
+                <div class="bar" style="
+                  width: 80%;
+                  margin-left: 0px;
+                  "></div>
+              </div>
+              <div class="toggle toggle__min" tabindex="0" style="
+              left: 0%;
+              "></div>
+              <div class="toggle toggle__max" tabindex="0" style="
+              left: 80%;
+              "></div>
+            </div>
+          </div>
+          <button type="submit">Показать</button>
         </fieldset>
       </form>
     </section>
@@ -134,7 +136,7 @@
             <a href="#">
               <h3>Amara Resort & Spa</h3>
             </a>
-            <p class="group__price">Гостиница от 4000 Р.</p>
+            <p class="group__price"><span>Гостиница</span><span>4000 Р.</span></p>
             <p class="group__links">
               <a href="#" class="more">Подробнее</a>
               <a href="#" class="booking">Забронировать</a>
