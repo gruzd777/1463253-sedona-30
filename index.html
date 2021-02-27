@@ -114,7 +114,7 @@
         <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
           <p class="search__row">
             <label class="search__label" for="date-first">Дата заезда:</label>
-            <input class="search__input" type="text" id="date-first" name="Дата заезда">
+            <input class="search__input" type="text" id="date-first" name="Дата заезда" autofocus required>
             <svg class="calendar" width="21" height="23" viewBox="0 0 21 23" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -127,7 +127,7 @@
           </p>
           <p class="search__row">
             <label class="search__label" for="date-two">Дата выезда:</label>
-            <input class="search__input" type="text" id="date-two" name="Дата выезда">
+            <input class="search__input" type="text" id="date-two" name="Дата выезда" required>
             <svg class="calendar" width="21" height="23" viewBox="0 0 21 23" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -146,7 +146,7 @@
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="12" height="3" fill="#A9A9A9" />
               </svg>
-              <input class="search__input search__input--short" id="big" type="text" name="Взрослые">
+              <input class="search__input search__input--short" id="big" type="text" name="Взрослые" required>
               <button class="search__button" type="button"></button>
               <svg class="plus" width="11" height="11" viewBox="0 0 11 11" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -162,7 +162,7 @@
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="12" height="3" fill="#A9A9A9" />
               </svg>
-              <input class="search__input search__input--short" id="little" type="text" name="Дети">
+              <input class="search__input search__input--short" id="little" type="text" name="Дети" required>
               <button class="search__button" type="button"></button>
               <svg class="plus" width="11" height="11" viewBox="0 0 11 11" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -236,7 +236,7 @@
       </a>
     </p>
   </footer>
-  <script src="js/toggle-form.js"></script>
+  <script src="js/open-form.js"></script>
 </body>
 
 </html>

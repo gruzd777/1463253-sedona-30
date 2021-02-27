@@ -472,6 +472,7 @@ img {
     font: inherit;
     outline: none;
     box-sizing: border-box;
+    text-transform: uppercase;
 }
 
 .search__row .calendar {
