@@ -7,3 +7,11 @@ toggleTitle.addEventListener('click', function (evt) {
     toggleForm.classList.toggle('show');
     focus.focus();
 });
+
+window.addEventListener('keydown', function (event) { 
+    if (event.code === 'Escape' || event.code === 'Backspace') { 
+        alert('хуй');
+    };
+}
+)
+
