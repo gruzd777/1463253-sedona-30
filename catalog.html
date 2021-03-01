@@ -120,8 +120,16 @@
           </li>
         </ul>
         <div class="button__group">
-          <a href="#" aria-label="Сортировка по возрастанию">Сортировка вверх</a>
-          <a href="#" aria-label="Сортировка по возрастанию">Сортировка вниз</a>
+          <a class="up" href="#" aria-label="Сортировка по вверх">
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+              </svg>
+          </a>
+          <a class="down down__active" href="#" aria-label="Сортировка по вниз">
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA"/>
+              </svg>
+          </a>
         </div>
       </div>
       <h2 class="visually-hidden">Список найденных отелей</h2>
@@ -136,7 +144,7 @@
             <a href="#">
               <h3>Amara Resort & Spa</h3>
             </a>
-            <p class="group__price"><span>Гостиница</span><span>4000 Р.</span></p>
+            <p class="group__price"><span>Гостиница</span><span class="hotel">от 4000 Р.</span></p>
             <p class="group__links">
               <a href="#" class="more">Подробнее</a>
               <a href="#" class="booking">Забронировать</a>
@@ -163,7 +171,7 @@
             <a href="#">
               <h3>Desert Quail Inn</h3>
             </a>
-            <p class="group__price">Мотель от 3000 Р.</p>
+            <p class="group__price"><span>Мотель</span><span class="motel">от 3000 Р.</span></p>
             <p class="group__links">
               <a href="#" class="more">Подробнее</a>
               <a href="#" class="booking">Забронировать</a>
@@ -188,7 +196,7 @@
             <a href="#">
               <h3>Villas at Poco Diablo</h3>
             </a>
-            <p class="group__price">Апартаменты от 2000 Р.</p>
+            <p class="group__price"><span>Апартаменты</span><span class="apart">от 2000 Р.</span></p>
             <p class="group__links">
               <a href="#" class="more">Подробнее</a>
               <a href="#" class="booking">Забронировать</a>
