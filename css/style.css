@@ -137,7 +137,8 @@ img {
     opacity: 0.3;
 }
 
-.header__link--active {
+.header__link--active,
+.header__link--active:hover {
     color: var(--basic-braun);
     cursor: default;
 }
