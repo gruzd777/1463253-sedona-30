@@ -1,6 +1,6 @@
-let toggleForm = document.querySelector('.search__form');
-let toggleTitle = document.querySelector('.search__link');
-let focus = toggleForm.querySelector('#date-first');
+const toggleForm = document.querySelector('.search__form');
+const toggleTitle = document.querySelector('.search__link');
+const focus = toggleForm.querySelector('#date-first');
 
 toggleTitle.addEventListener('click', function (evt) {
     evt.preventDefault();
@@ -9,9 +9,11 @@ toggleTitle.addEventListener('click', function (evt) {
 });
 
 window.addEventListener('keydown', function (event) { 
-    if (event.code === 'Escape' || event.code === 'Backspace') { 
-        alert('хуй');
+    if (event.code === 'Escape') { 
+        if (toggleForm.classList.contains('show')) {
+            event.preventDefault();
+            toggleForm.classList.remove('show');
+        };
     };
-}
-)
+});
 
