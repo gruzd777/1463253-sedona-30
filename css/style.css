@@ -89,19 +89,20 @@ img {
 /* Navigation */
 
 .header {
-    display: grid;
+    position: relative;
 }
 
 .header__logo {
-    justify-self: center;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
     z-index: 10;
 }
 
 .header__menu {
     font-size: 14px;
     line-height: 26px;
-    margin-top: -73px;
 }
 
 .header__list {
@@ -122,6 +123,7 @@ img {
 
 .header__item {
     width: 25%;
+    margin-bottom: 15px;
 }
 
 .header__link {
@@ -152,8 +154,8 @@ img {
     min-height: 509px;
     padding: 72px 0px 72px 0px;
     box-sizing: border-box;
-    margin-top: -15px;
     position: relative;
+    margin-bottom: 42px;
 }
 
 .promo::before {
@@ -174,6 +176,7 @@ img {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    background: var(--basic-gray);
 }
 
 .why__item {
@@ -181,6 +184,19 @@ img {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+}
+
+.why__group-container {
+    display: flex;
+    width: 100%;
+}
+
+.why__group-container::after {
+    content: '';
+    height: 100%;
+    width: 800px;
+    background: url(../img/image.jpg) no-repeat top left;
+    background-size: cover;
 }
 
 .why__group {
@@ -198,15 +214,16 @@ img {
 
 .why__title {
     font-size: 21px;
-    line-height: 21px;
+    line-height: 26px;
     text-align: center;
     font-weight: 700;
-    margin: 0px 0px 25px 0px;
+    margin: 0px auto 25px;
+    width: 160px;
 }
 
 .why__title--space {
-    margin: 42px 0px 49px 0px;
-    padding: 0px 10px;
+    width: 440px;
+    margin: 0 auto 42px;
 }
 
 .why__row {
@@ -237,7 +254,9 @@ img {
 
 .why__row--space {
     margin-bottom: 51px;
-    padding: 0px 10px;
+    width: 519px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .why__item-flex {
@@ -259,6 +278,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    background: var(--basic-white);
 }
 
 .why__subitem {
@@ -347,6 +367,7 @@ img {
     color: var(--text-special);
     text-align: center;
     margin: 0px 0px 139px 0px;
+    width: 435px;
 }
 
 /* Search modal window*/
@@ -461,6 +482,7 @@ img {
     width: 38px;
     height: 38px;
     background: var(--form-gray);
+    cursor: pointer;
 }
 
 .search__input {
@@ -847,6 +869,15 @@ img {
     box-sizing: border-box;
 }
 
+.results__title {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
 .results__breadcrumbs h2 {
     margin: 0 46px 0 0;
     padding: 0;
@@ -905,27 +936,6 @@ img {
 .down__active path {
     fill: var(--basic-blue);
 }
-
-
-/* .button__group .up::before {
-    content: '';
-    position: absolute;
-    width: 11px;
-    height: 10px;
-    background: url(../icons/icon-up-dir.svg) no-repeat;
-    top: 0;
-    right: 0;
-}
-
-.button__group .down::after {
-    content: '';
-    position: absolute;
-    width: 11px;
-    height: 10px;
-    background: url(../icons/up.svg) no-repeat;
-    top: 0;
-    right: 20px;
-} */
 
 .main__hotels-list {
     margin: 0;
