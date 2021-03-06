@@ -48,6 +48,26 @@ body {
     align-content: start;
 }
 
+.page__catalog {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--form-gray);
+    background-position: top center;
+    color: var(--basic-black);
+
+    min-height: 100%;
+    
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    align-content: start;
+}
+
 a {
     text-decoration: none;
   }
@@ -119,30 +139,18 @@ img {
 }
 
 .header__item:nth-child(4n+1) {
-    margin-left: 72px;
+    margin-left: 74px;
 }
 
 .header__item:nth-child(4n+3) {
     text-align: right;
+    margin-right: -1px;
 }
 
 .header__item:nth-child(4n+4) {
     margin-right: 72px;
     text-align: right;
 }
-
-/* .header__list li:nth-child(4n+3) {
-    grid-column: 4/5;
-    margin-right: 15px;
-}
-
-.header__list li:nth-child(4n+4) {
-    grid-column: 5/6;
-}
-
-.header__list li:nth-child(4n+2) {
-    margin-left: 17px;
-} */
 
 .header__item {
     margin-bottom: 15px;
@@ -816,17 +824,16 @@ img {
 }
 
 .filter__item--houses {
-    margin-left: 120px;
+    margin-left: 118px;
 }
 
 .filter__item--cost {
     display: flex;
     flex-direction: column;
-    margin-left: 319px;
+    margin-left: 346px;
 }
 
 .filter__item button {
-    margin-top: 33px;
     width: 137px;
     padding: 5px;
     align-self: center;
@@ -838,6 +845,7 @@ img {
     color: var(--basic-white);
     text-transform: uppercase;
     cursor: pointer;
+    margin: 33px 6px 0 0;
 }
 
 .filter__item button:hover {
@@ -850,6 +858,18 @@ img {
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
+}
+
+.legend__second-page--infrastruktur {
+    margin-bottom: 25px;
+}
+
+.legend__second-page--type {
+    margin-bottom: 25px;
+}
+
+.legend__second-page--cost {
+    margin-bottom: 0;
 }
 
 
@@ -886,11 +906,11 @@ img {
 }
 
 .price__controls .min__price {
-    margin-left: 46px;
+    margin-left: 60px;
 }
 
 .price__controls .max__price {
-    margin-left: 95px;
+    margin-left: 81px;
 }
 
 .price__controls input {
@@ -952,8 +972,7 @@ img {
     font-size: 14px;
     line-height: 21px;
     color: var(--basic-white);
-    padding: 27.5px 76px 30px 69px;
-    margin-top: -15px;
+    padding: 25.5px 73px 32px 72px;
 }
 
 .main-form {
@@ -961,14 +980,20 @@ img {
     flex-wrap: wrap;
 }
 
-.main__list, .main__check {
+.main__list {
     list-style: none;
-    margin-left: 21px;
     padding: 0;
-    margin-bottom: 25px;
+    margin: 0 0 0 21px;
 }
 
-.main__list, .main__check:last-child {
+.main__check {
+    list-style: none;
+    margin: 0 0 25px 20px;
+    padding: 0;
+
+}
+
+.main__check:last-child {
     margin-bottom: 0;
 }
 
@@ -983,6 +1008,7 @@ img {
     line-height: 21px;
 }
 
+
 .filter__input__checkbox + label::before {
     content: "";
     position: absolute;
@@ -992,13 +1018,26 @@ img {
     height: 23px;
     border: 2px solid var(--basic-white);
     border-radius: 5px;
+    box-sizing: border-box;
   }
+
+  .filter__input__checkbox:checked + label::before {
+      content: '';
+      position: absolute;
+      background: url(../icons/rectangle-half.svg);
+      width: 23px;
+      height: 23px;
+      border: none;
+      left: -42px;
+      top: 0px;
+  }
+
 
   .filter__input__checkbox:checked + label::after {
     content: "";
     position: absolute;
-    top: 3px;
-    left: -35px;
+    top: 0px;
+    left: -37px;
     width: 23px;
     height: 23px;
     background: url(../icons/okey.svg) no-repeat;
@@ -1021,7 +1060,7 @@ img {
 
 .results__title {
     padding: 0;
-    margin: 0;
+    margin: 0 0 4px 1px;
     font: inherit;
     font-weight: 400;
     font-size: 12px;
@@ -1037,7 +1076,7 @@ img {
 }
 
 .results__list {
-    margin: 0;
+    margin: 0px 0 1px 2px;
     padding: 0;
     list-style: none;
     display: flex;
@@ -1049,7 +1088,7 @@ img {
 }
 
 .results__list li:not(:first-child) {
-    margin: 0 0 0 30px;
+    margin: 0 0 0 33px;
 }
 
 .results__list li:first-child {
@@ -1081,6 +1120,10 @@ img {
 
 .button__group a:active path {
     fill: var(--basic-blue);
+}
+
+.up {
+    margin: 0px 6px 0 0;
 }
 
 .down__active path {
@@ -1219,6 +1262,7 @@ img {
     justify-content: space-between;
     min-width: 110px;
     text-align: right;
+    padding-top: 6px;
 }
 
 .group__item.stars p:last-child {
@@ -1235,15 +1279,15 @@ img {
 }
 
 .group__price .hotel {
-    margin-left: 30px;
+    margin-left: 39px;
 }
 
 .group__price .motel {
- margin-left: 57px;
+    margin-left: 64px;
 }
 
 .group__price .apart {
-    margin-left: 14px;
+    margin-left: 21px;
 }
 
 /* Animation  */
