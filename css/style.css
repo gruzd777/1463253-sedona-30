@@ -687,6 +687,10 @@ img {
     align-items: flex-start;
 }
 
+.footer__group--catalog {
+    margin: 4px auto 0;
+}
+
 .footer__tag, 
 .footer__phone--link {
     font-size: 21px;
