@@ -8,8 +8,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="icons/favicons/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icons/favicons/152.png">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Каталог - HTML Academy: Седона</title>
 </head>
 
@@ -94,12 +94,12 @@
                   margin-left: 0px;
                   "></div>
               </div>
-              <div class="toggle toggle__min" tabindex="0" style="
+              <a href="#" class="toggle toggle__min" aria-label="Минимальная цена" style="
               left: 0%;
-              "></div>
-              <div class="toggle toggle__max" tabindex="0" style="
+              "></a>
+              <a href="#" class="toggle toggle__max" aria-label="Максимальная цена" style="
               left: 80%;
-              "></div>
+              "></a>
             </div>
           </div>
           <button type="submit">Показать</button>
@@ -113,7 +113,7 @@
         <h4 class="results__title">Сортировка</h4>
         <ul class="results__list">
           <li class="results__item">
-            <a class="results__link" href="#">По цене</a>
+            <a class="results__link results__link--active" href="#">По цене</a>
           </li>
           <li class="results__item">
             <a class="results__link" href="#">По типу</a>
@@ -123,12 +123,12 @@
           </li>
         </ul>
         <div class="button__group">
-          <a class="up" href="#" aria-label="Сортировка по вверх">
+          <a class="direction-link up" href="#" aria-label="Сортировка по возрастанию">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
               </svg>
           </a>
-          <a class="down down__active" href="#" aria-label="Сортировка по вниз">
+          <a class="direction-link down down__active" href="#" aria-label="Сортировка по убыванию">
             <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA"/>
               </svg>
@@ -154,13 +154,9 @@
             </p>
           </div>
           <div class="group__item stars">
-            <p>
-              <img src="icons/star.svg" width="19" height="17" alt="Звезда">
-              <img src="icons/star.svg" width="19" height="17" alt="Звезда">
-              <img src="icons/star.svg" width="19" height="17" alt="Звезда">
-              <img src="icons/star.svg" width="19" height="17" alt="Звезда">
+            <p class="rate rate--four">
             </p>
-            <p>Рейтинг: 8.5</p>
+            <p class="stats">Рейтинг: 8.5</p>
           </div>
         </li>
         <li>
@@ -180,12 +176,9 @@
             </p>
           </div>
           <div class="group__item stars">
-            <p>
-              <img src="icons/star.svg" width="19" height="17" alt="Звезда">
-              <img src="icons/star.svg" width="19" height="17" alt="Звезда">
-              <img src="icons/star.svg" width="19" height="17" alt="Звезда">
+            <p class="rate rate--three">
             </p>
-            <p>Рейтинг: 8.9</p>
+            <p class="stats">Рейтинг: 8.9</p>
           </div>
         </li>
         <li>
@@ -205,11 +198,9 @@
             </p>
           </div>
           <div class="group__item stars">
-            <p>
-              <img src="icons/star.svg" width="19" height="17" alt="Звезда">
-              <img src="icons/star.svg" width="19" height="17" alt="Звезда">
+            <p class="rate rate--two">
             </p>
-            <p>Рейтинг: 9.2</p>
+            <p class="stats">Рейтинг: 9.2</p>
           </div>
         </li>
       </ul>
@@ -250,6 +241,7 @@
     </p>
   </div>
   </footer>
+  <script src="./js/open-form.min.js"></script>
 </body>
 
 </html>
