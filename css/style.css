@@ -1334,6 +1334,7 @@ img {
 
 .group__price span {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .group__price .hotel {
